@@ -2,73 +2,99 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tecnología: HTML</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>Investigación Técnica: HTML, CSS y JS</title>
 </head>
 <body>
     <header>
-        <h1>Investigación: Evolución del HTML</h1>
+        <h1>Investigación de Tecnologías Web</h1>
     </header>
 
     <main>
         <section>
-            <h2>3 Hitos Históricos (Verificados)</h2>
+            <h2>3 Hitos de HTML (Lenguaje de Marcado)</h2>
             <ul>
-                <li><strong>1991:</strong> Lanzamiento de "HTML Tags" (primer borrador público).</li>
-                <li><strong>1999:</strong> Estandarización de HTML 4.01 (dominó la web por años).</li>
-                <li><strong>2014:</strong> HTML5 se convierte en estándar oficial (revolución multimedia).</li>
+                <li><strong>1991:</strong> Publicación de "HTML Tags", el primer documento con 18 etiquetas básicas.</li>
+                <li><strong>1999:</strong> HTML 4.01 se vuelve estándar, permitiendo el uso de hojas de estilo externas.</li>
+                <li><strong>2014:</strong> Lanzamiento oficial de HTML5, integrando multimedia nativa sin plugins.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Tabla Comparativa</h2>
-            <table border="1" id="miTabla">
+            <h2>3 Hitos de CSS (Hojas de Estilo)</h2>
+            <ul>
+                <li><strong>1996:</strong> Publicación de CSS1, permitiendo por primera vez cambiar fuentes y colores fuera del HTML.</li>
+                <li><strong>1998:</strong> CSS2 introduce el posicionamiento absoluto/relativo y tipos de medios (como "print").</li>
+                <li><strong>2011:</strong> CSS3 se divide en módulos, permitiendo bordes redondeados, sombras y animaciones.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3 Hitos de JavaScript (Lenguaje de Programación)</h2>
+            <ul>
+                <li><strong>1995:</strong> Brendan Eich crea Mocha (luego LiveScript y finalmente JavaScript) en solo 10 días.</li>
+                <li><strong>2009:</strong> Lanzamiento de Node.js, permitiendo que JavaScript se ejecute en el servidor y no solo en el navegador.</li>
+                <li><strong>2015:</strong> Lanzamiento de ES6 (ECMAScript 2015), la actualización más importante con clases y flechas.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Comparativa Técnica: HTML4 vs HTML5</h2>
+            <table border="1">
                 <thead>
                     <tr>
-                        <th>Versión</th>
-                        <th>Característica Principal</th>
+                        <th>Criterio</th>
+                        <th>HTML4</th>
+                        <th>HTML5</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>HTML4</td>
-                        <td>Dependencia de Plugins (Flash)</td>
+                        <td><strong>Manejo de Video/Audio</strong></td>
+                        <td>Requería Flash Player o Silverlight.</td>
+                        <td>Etiquetas nativas &lt;video&gt; y &lt;audio&gt;.</td>
                     </tr>
                     <tr>
-                        <td>HTML5</td>
-                        <td>Etiquetas Semánticas y Multimedia Nativa</td>
+                        <td><strong>Estructura de Página</strong></td>
+                        <td>Uso genérico de &lt;div&gt; e IDs.</td>
+                        <td>Etiquetas semánticas (&lt;header&gt;, &lt;nav&gt;, &lt;section&gt;).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gráficos Vectoriales</strong></td>
+                        <td>No soportaba SVG directamente en el código.</td>
+                        <td>Soporte nativo para SVG y la etiqueta &lt;canvas&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Almacenamiento Local</strong></td>
+                        <td>Limitado a Cookies (4KB).</td>
+                        <td>Web Storage API (LocalStorage) de hasta 5MB.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Geolocalización</strong></td>
+                        <td>Imposible de obtener sin herramientas externas.</td>
+                        <td>API de geolocalización integrada por defecto.</td>
                     </tr>
                 </tbody>
             </table>
-            <br>
-            <button onclick="resaltarTabla()">Resaltar Tabla con JS</button>
         </section>
 
         <section>
-            <h2>Multimedia</h2>
+            <h2>Multimedia y Enlaces</h2>
+            <p>A continuación, una representación visual del lenguaje:</p>
             <img src="https://images.unsplash.com/photo-1621839673705-6837d7d4452b?w=500" 
-                 alt="Logotipo moderno de HTML5 sobre fondo tecnológico" width="400">
+                 alt="Logotipo oficial de HTML5 en color naranja intenso con fondo tecnológico" width="400">
             
             <br>
-            <h3>Video Demostrativo</h3>
+            <h3>Video de Referencia</h3>
             <iframe width="560" height="315" 
                     src="https://www.youtube.com/embed/nb7G_R_p_QY" 
-                    title="YouTube video player" frameborder="0" allowfullscreen>
+                    title="Video educativo sobre tecnologías web" 
+                    frameborder="0" allowfullscreen>
             </iframe>
         </section>
     </main>
 
     <footer>
-        <p><a href="../index.html">Regresar al Inicio</a></p>
-        
-        </footer>
-
-    <script>
-        function resaltarTabla() {
-            const tabla = document.getElementById('miTabla');
-            tabla.style.border = "5px solid #2563eb";
-            alert("Has interactuado con la tabla usando JavaScript.");
-        }
-    </script>
-</body>
-</html>
+        <p><a href="../index.html" target="_blank">Regresar al Inicio (Abrir en pestaña nueva)</a></p>
+    </footer>
