@@ -2,59 +2,73 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Hitos de la Tecnología</title>
+    <title>Tecnología: HTML</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Evolución del HTML</h1>
-            <button id="theme-toggle">Cambiar Modo de Color</button>
-        </header>
+    <header>
+        <h1>Investigación: Evolución del HTML</h1>
+    </header>
 
-        <section id="hitos">
-            <h3>3 Hitos Clave (Verificados)</h3>
+    <main>
+        <section>
+            <h2>3 Hitos Históricos (Verificados)</h2>
             <ul>
-                <li><strong>1991:</strong> Primeras 18 etiquetas de HTML por Tim Berners-Lee.</li>
-                <li><strong>1999:</strong> Estandarización de HTML 4.01.</li>
-                <li><strong>2014:</strong> HTML5 se convierte en Recomendación Oficial de la W3C.</li>
+                <li><strong>1991:</strong> Lanzamiento de "HTML Tags" (primer borrador público).</li>
+                <li><strong>1999:</strong> Estandarización de HTML 4.01 (dominó la web por años).</li>
+                <li><strong>2014:</strong> HTML5 se convierte en estándar oficial (revolución multimedia).</li>
             </ul>
         </section>
 
-        <section id="tabla-datos">
-            <table>
-                <caption>Comparativa de Versiones</caption>
+        <section>
+            <h2>Tabla Comparativa</h2>
+            <table border="1" id="miTabla">
                 <thead>
                     <tr>
-                        <th>Característica</th>
-                        <th>HTML 4.01</th>
-                        <th>HTML5</th>
+                        <th>Versión</th>
+                        <th>Característica Principal</th>
                     </tr>
                 </thead>
-                <tbody id="tech-table-body">
+                <tbody>
                     <tr>
-                        <td>Multimedia</td>
-                        <td>Flash/Plugins externos</td>
-                        <td>Etiquetas nativas &lt;video&gt; y &lt;audio&gt;</td>
+                        <td>HTML4</td>
+                        <td>Dependencia de Plugins (Flash)</td>
+                    </tr>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Etiquetas Semánticas y Multimedia Nativa</td>
                     </tr>
                 </tbody>
             </table>
-            <button onclick="agregarFila()">Añadir Dato Extra (JS)</button>
+            <br>
+            <button onclick="resaltarTabla()">Resaltar Tabla con JS</button>
         </section>
 
-        <section id="multimedia">
-            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=500" alt="Código JavaScript moderno en un editor de texto profesional" class="img-tech">
+        <section>
+            <h2>Multimedia</h2>
+            <img src="https://images.unsplash.com/photo-1621839673705-6837d7d4452b?w=500" 
+                 alt="Logotipo moderno de HTML5 sobre fondo tecnológico" width="400">
             
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nb7G_R_p_QY" title="Tutorial HTML5" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <br>
+            <h3>Video Demostrativo</h3>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/nb7G_R_p_QY" 
+                    title="YouTube video player" frameborder="0" allowfullscreen>
+            </iframe>
         </section>
+    </main>
 
-        <footer>
-            <p><a href="../index.html">Volver al inicio</a></p>
-            </footer>
-    </div>
+    <footer>
+        <p><a href="../index.html">Regresar al Inicio</a></p>
+        
+        </footer>
 
-    <script src="../jsComponents/main.js"></script>
+    <script>
+        function resaltarTabla() {
+            const tabla = document.getElementById('miTabla');
+            tabla.style.border = "5px solid #2563eb";
+            alert("Has interactuado con la tabla usando JavaScript.");
+        }
+    </script>
 </body>
 </html>
