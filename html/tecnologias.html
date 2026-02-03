@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hitos de la Tecnología</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Evolución del HTML</h1>
+            <button id="theme-toggle">Cambiar Modo de Color</button>
+        </header>
+
+        <section id="hitos">
+            <h3>3 Hitos Clave (Verificados)</h3>
+            <ul>
+                <li><strong>1991:</strong> Primeras 18 etiquetas de HTML por Tim Berners-Lee.</li>
+                <li><strong>1999:</strong> Estandarización de HTML 4.01.</li>
+                <li><strong>2014:</strong> HTML5 se convierte en Recomendación Oficial de la W3C.</li>
+            </ul>
+        </section>
+
+        <section id="tabla-datos">
+            <table>
+                <caption>Comparativa de Versiones</caption>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>HTML 4.01</th>
+                        <th>HTML5</th>
+                    </tr>
+                </thead>
+                <tbody id="tech-table-body">
+                    <tr>
+                        <td>Multimedia</td>
+                        <td>Flash/Plugins externos</td>
+                        <td>Etiquetas nativas &lt;video&gt; y &lt;audio&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="agregarFila()">Añadir Dato Extra (JS)</button>
+        </section>
+
+        <section id="multimedia">
+            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=500" alt="Código JavaScript moderno en un editor de texto profesional" class="img-tech">
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nb7G_R_p_QY" title="Tutorial HTML5" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <p><a href="../index.html">Volver al inicio</a></p>
+            </footer>
+    </div>
+
+    <script src="../jsComponents/main.js"></script>
+</body>
+</html>

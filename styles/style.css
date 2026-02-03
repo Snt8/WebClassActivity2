@@ -1,0 +1,35 @@
+:root { --primary: #2563eb; --bg: #ffffff; --text: #1f2937; }
+.dark-mode { --bg: #1f2937; --text: #f3f4f6; }
+
+body { 
+    background-color: var(--bg); 
+    color: var(--text); 
+    font-family: 'Segoe UI', sans-serif; 
+    transition: 0.3s;
+}
+
+.container { max-width: 800px; margin: auto; padding: 2rem; }
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 1rem 0; 
+}
+
+th, td { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+.img-tech { width: 100%; border-radius: 10px; margin-top: 15px; }
+
+.video-container { margin-top: 20px; }
+
+.btn { 
+    background: var(--primary); 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
